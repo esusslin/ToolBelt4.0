@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AAAE9DC56240EB553024007 /* Pods_ToolBelt_4_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676CB52AB2C24F2279557606 /* Pods_ToolBelt_4_0.framework */; };
+		E201B1951D178B7F0046486C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E201B1941D178B7F0046486C /* FBSDKCoreKit.framework */; };
+		E201B1971D178B8B0046486C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E201B1961D178B8B0046486C /* FBSDKLoginKit.framework */; };
+		E201B1991D178B940046486C /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E201B1981D178B940046486C /* FBSDKShareKit.framework */; };
+		E201B19C1D1791010046486C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E201B19B1D1791010046486C /* .gitignore */; };
+		E25162471D178A0700499911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25162461D178A0700499911 /* AppDelegate.swift */; };
+		E25162491D178A0700499911 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25162481D178A0700499911 /* ViewController.swift */; };
+		E251624C1D178A0700499911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E251624A1D178A0700499911 /* Main.storyboard */; };
+		E251624E1D178A0700499911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E251624D1D178A0700499911 /* Assets.xcassets */; };
+		E25162511D178A0700499911 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E251624F1D178A0700499911 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27AA4CEB4F74003F4F8858A4 /* Pods-ToolBelt_4.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolBelt_4.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToolBelt_4.0/Pods-ToolBelt_4.0.release.xcconfig"; sourceTree = "<group>"; };
+		676CB52AB2C24F2279557606 /* Pods_ToolBelt_4_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolBelt_4_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90A3BB6A8DA366CA3D41AFE /* Pods-ToolBelt_4.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolBelt_4.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToolBelt_4.0/Pods-ToolBelt_4.0.debug.xcconfig"; sourceTree = "<group>"; };
+		E201B1941D178B7F0046486C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		E201B1961D178B8B0046486C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		E201B1981D178B940046486C /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		E201B19A1D178F230046486C /* ToolBelt_4.0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToolBelt_4.0-Bridging-Header.h"; sourceTree = "<group>"; };
+		E201B19B1D1791010046486C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E25162431D178A0700499911 /* ToolBelt_4.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolBelt_4.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25162461D178A0700499911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E25162481D178A0700499911 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E251624B1D178A0700499911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E251624D1D178A0700499911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E25162501D178A0700499911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E25162521D178A0700499911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E25162401D178A0700499911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E201B1991D178B940046486C /* FBSDKShareKit.framework in Frameworks */,
+				3AAAE9DC56240EB553024007 /* Pods_ToolBelt_4_0.framework in Frameworks */,
+				E201B1951D178B7F0046486C /* FBSDKCoreKit.framework in Frameworks */,
+				E201B1971D178B8B0046486C /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54B56C9946F0F036FC33C1A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C90A3BB6A8DA366CA3D41AFE /* Pods-ToolBelt_4.0.debug.xcconfig */,
+				27AA4CEB4F74003F4F8858A4 /* Pods-ToolBelt_4.0.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF46977684455F630C2CAE10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				676CB52AB2C24F2279557606 /* Pods_ToolBelt_4_0.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E251623A1D178A0700499911 = {
+			isa = PBXGroup;
+			children = (
+				E201B19B1D1791010046486C /* .gitignore */,
+				E25162451D178A0700499911 /* ToolBelt_4.0 */,
+				E25162441D178A0700499911 /* Products */,
+				54B56C9946F0F036FC33C1A1 /* Pods */,
+				CF46977684455F630C2CAE10 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E25162441D178A0700499911 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E25162431D178A0700499911 /* ToolBelt_4.0.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E25162451D178A0700499911 /* ToolBelt_4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				E201B1981D178B940046486C /* FBSDKShareKit.framework */,
+				E201B1961D178B8B0046486C /* FBSDKLoginKit.framework */,
+				E201B1941D178B7F0046486C /* FBSDKCoreKit.framework */,
+				E25162461D178A0700499911 /* AppDelegate.swift */,
+				E201B19A1D178F230046486C /* ToolBelt_4.0-Bridging-Header.h */,
+				E25162481D178A0700499911 /* ViewController.swift */,
+				E251624A1D178A0700499911 /* Main.storyboard */,
+				E251624D1D178A0700499911 /* Assets.xcassets */,
+				E251624F1D178A0700499911 /* LaunchScreen.storyboard */,
+				E25162521D178A0700499911 /* Info.plist */,
+			);
+			path = ToolBelt_4.0;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E25162421D178A0700499911 /* ToolBelt_4.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E25162551D178A0700499911 /* Build configuration list for PBXNativeTarget "ToolBelt_4.0" */;
+			buildPhases = (
+				5538E23B806669BECD7CBF35 /* [CP] Check Pods Manifest.lock */,
+				E251623F1D178A0700499911 /* Sources */,
+				E25162401D178A0700499911 /* Frameworks */,
+				E25162411D178A0700499911 /* Resources */,
+				3C38DB570E8242D80465739A /* [CP] Embed Pods Frameworks */,
+				529429414B02BB00C0BE652E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToolBelt_4.0;
+			productName = ToolBelt_4.0;
+			productReference = E25162431D178A0700499911 /* ToolBelt_4.0.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E251623B1D178A0700499911 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Emmet Susslin";
+				TargetAttributes = {
+					E25162421D178A0700499911 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 694H5SYYW8;
+					};
+				};
+			};
+			buildConfigurationList = E251623E1D178A0700499911 /* Build configuration list for PBXProject "ToolBelt_4.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E251623A1D178A0700499911;
+			productRefGroup = E25162441D178A0700499911 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E25162421D178A0700499911 /* ToolBelt_4.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E25162411D178A0700499911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E201B19C1D1791010046486C /* .gitignore in Resources */,
+				E25162511D178A0700499911 /* LaunchScreen.storyboard in Resources */,
+				E251624E1D178A0700499911 /* Assets.xcassets in Resources */,
+				E251624C1D178A0700499911 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C38DB570E8242D80465739A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToolBelt_4.0/Pods-ToolBelt_4.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		529429414B02BB00C0BE652E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToolBelt_4.0/Pods-ToolBelt_4.0-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5538E23B806669BECD7CBF35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E251623F1D178A0700499911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25162491D178A0700499911 /* ViewController.swift in Sources */,
+				E25162471D178A0700499911 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E251624A1D178A0700499911 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E251624B1D178A0700499911 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E251624F1D178A0700499911 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E25162501D178A0700499911 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E25162531D178A0700499911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E25162541D178A0700499911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E25162561D178A0700499911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C90A3BB6A8DA366CA3D41AFE /* Pods-ToolBelt_4.0.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ToolBelt_4.0",
+				);
+				INFOPLIST_FILE = ToolBelt_4.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "esusslin.ToolBelt-4-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E25162571D178A0700499911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27AA4CEB4F74003F4F8858A4 /* Pods-ToolBelt_4.0.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ToolBelt_4.0",
+				);
+				INFOPLIST_FILE = ToolBelt_4.0/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "esusslin.ToolBelt-4-0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E251623E1D178A0700499911 /* Build configuration list for PBXProject "ToolBelt_4.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25162531D178A0700499911 /* Debug */,
+				E25162541D178A0700499911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E25162551D178A0700499911 /* Build configuration list for PBXNativeTarget "ToolBelt_4.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25162561D178A0700499911 /* Debug */,
+				E25162571D178A0700499911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E251623B1D178A0700499911 /* Project object */;
+}
