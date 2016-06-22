@@ -8,13 +8,16 @@
 
 import UIKit
 
-class CustomTabBarViewController: UITabBarController, CustomTabBarDataSource, CustomTabBarDelegate {
+class CustomTabBarViewController: UITabBarController, CustomTabBarDataSource, CustomTabBarDelegate, UITabBarControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
         self.tabBar.hidden = true
+        self.selectedIndex = 1
+        self.delegate = self
         
         let customTabBar = CustomTabBar(frame: self.tabBar.frame)
         customTabBar.datasource = self
@@ -34,6 +37,11 @@ class CustomTabBarViewController: UITabBarController, CustomTabBarDataSource, Cu
     
     func didSelectViewController(tabBarView: CustomTabBar, atIndex index: Int) {
         self.selectedIndex = index
+    }
+    
+    func tabBarController(tabBarController: UITabBarController, animationControllerForTransitionFromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        return CustomTabAnimatedTransitioning()
     }
     
 }
