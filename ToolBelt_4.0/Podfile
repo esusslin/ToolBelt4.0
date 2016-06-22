@@ -10,5 +10,6 @@ target 'ToolBelt_4.0' do
     pod 'Firebase/Database'
     pod 'Firebase/Auth'
     pod 'JSQMessagesViewController'
+    pod 'Backendless'
 
 end

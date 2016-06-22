@@ -24,6 +24,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+## Backendless
+
+Copyright (c) 2012-2016 by Backendless.com
+
 ## Firebase
 
 Copyright 2016 Google Inc.

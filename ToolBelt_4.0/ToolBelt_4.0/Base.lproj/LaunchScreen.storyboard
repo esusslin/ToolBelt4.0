@@ -9,7 +9,7 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TOOL_ICON" id="xxA-5P-ziE">
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Steel-1" id="7S3-vb-CW2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
@@ -20,6 +20,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TOOL_ICON" width="1024" height="1024"/>
+        <image name="Steel-1" width="1024" height="1024"/>
     </resources>
 </document>
