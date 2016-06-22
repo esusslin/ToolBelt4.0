@@ -51,14 +51,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="FPH-2z-Zdv" kind="show" identifier="" id="vBg-gb-QNX"/>
+                        <segue destination="FPH-2z-Zdv" kind="show" identifier="oauthtotabs" id="vBg-gb-QNX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="93" y="165"/>
         </scene>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="ohc-Ad-dur">
             <objects>
                 <viewController id="5Wb-JZ-NEM" sceneMemberID="viewController">
@@ -67,17 +67,17 @@
                         <viewControllerLayoutGuide type="bottom" id="IMA-Rc-XBE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hTQ-i6-0V0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" selectedImage="user-icon" id="Gfk-ko-eDE"/>
+                    <tabBarItem key="tabBarItem" title="" image="Item 1" id="Gfk-ko-eDE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZG-x9-Fsg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-124" y="1061"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
         <scene sceneID="Moj-Hp-nmg">
             <objects>
                 <viewController id="NGD-SX-CzT" colorLabel="IBBuiltInLabel-Orange" sceneMemberID="viewController">
@@ -86,11 +86,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Dii-Re-DDZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MXl-GS-vGa">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" selectedImage="circle" id="OHX-dH-x4Q"/>
+                    <tabBarItem key="tabBarItem" title="" image="Item 2" id="OHX-dH-x4Q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q1b-QD-PBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,7 +101,7 @@
             <objects>
                 <tableViewController id="cnw-un-eSV" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pZV-7E-yKU">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -125,11 +125,11 @@
             </objects>
             <point key="canvasLocation" x="1802" y="1203"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="CNu-Pf-7Hn">
             <objects>
                 <navigationController id="1oV-Sg-I5I" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="letter" id="gP4-fE-Jf8"/>
+                    <tabBarItem key="tabBarItem" title="" image="Item 3" id="gP4-fE-Jf8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JWG-Uq-Dih">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -142,18 +142,20 @@
             </objects>
             <point key="canvasLocation" x="1708" y="165"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar View Controller-->
         <scene sceneID="ber-m6-UrS">
             <objects>
-                <tabBarController id="FPH-2z-Zdv" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="Rf6-zN-He8">
+                <tabBarController id="FPH-2z-Zdv" customClass="CustomTabBarViewController" customModule="ToolBelt_4_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Rf6-zN-He8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93778538843751003" green="0.95659894481964491" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.93778538840000003" green="0.95659894479999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.73197720239999997" green="0.77920674769999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="NGD-SX-CzT" kind="relationship" relationship="viewControllers" id="ryw-l8-01h"/>
                         <segue destination="5Wb-JZ-NEM" kind="relationship" relationship="viewControllers" id="pR4-41-2kb"/>
+                        <segue destination="NGD-SX-CzT" kind="relationship" relationship="viewControllers" id="ryw-l8-01h"/>
                         <segue destination="1oV-Sg-I5I" kind="relationship" relationship="viewControllers" id="wSe-Fo-LB7"/>
                     </connections>
                 </tabBarController>
@@ -163,9 +165,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Item 1" width="21" height="21"/>
+        <image name="Item 2" width="21" height="21"/>
+        <image name="Item 3" width="21" height="21"/>
         <image name="Steel-1" width="1024" height="1024"/>
-        <image name="circle" width="32" height="32"/>
-        <image name="letter" width="32" height="32"/>
-        <image name="user-icon" width="32" height="32"/>
     </resources>
 </document>

@@ -19,23 +19,42 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         return button
     }()
     
+    
+    
         let email = ""
         let first_name = ""
         let last_name = ""
         let image = ""
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        
+//        
+//        self.view.addSubview(loginButton)
+//        loginButton.center = self.view.center
+//        loginButton.delegate = self
+//        
+//        if let token = FBSDKAccessToken.currentAccessToken() {
+//
+//            self.performSegueWithIdentifier("oauthtotabs", sender: self)
+//        }
+//        
+//    }
+    
+    override func viewDidAppear(animated: Bool) {
         
+        super.viewWillAppear(true)
         
-        self.view.addSubview(loginButton)
-        loginButton.center = self.view.center
+        view.addSubview(loginButton)
+        loginButton.center = view.center
         loginButton.delegate = self
         
-        if let token = FBSDKAccessToken.currentAccessToken() {
+        
+        if let token = FBSDKAccessToken.currentAccessToken(){
             fetchProfile()
             super.performSegueWithIdentifier("oauthtotabs", sender: self)
         }
+        
         
     }
     
@@ -60,14 +79,15 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
                     defaults.synchronize()
                 }
             }
-
+            
+            self.performSegueWithIdentifier("oauthtotabs", sender: self)
         }
     }
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
        print("login complete")
         fetchProfile()
-        super.performSegueWithIdentifier("oauthtotabs", sender: self)
+        self.performSegueWithIdentifier("oauthtotabs", sender: self)
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
