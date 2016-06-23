@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="-124" y="1061"/>
         </scene>
-        <!--View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="Moj-Hp-nmg">
             <objects>
-                <viewController id="NGD-SX-CzT" colorLabel="IBBuiltInLabel-Orange" sceneMemberID="viewController">
+                <viewController id="NGD-SX-CzT" customClass="SearchViewController" customModule="ToolBelt_4_0" customModuleProvider="target" colorLabel="IBBuiltInLabel-Orange" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5SQ-AC-RF4"/>
                         <viewControllerLayoutGuide type="bottom" id="Dii-Re-DDZ"/>
@@ -88,13 +88,63 @@
                     <view key="view" contentMode="scaleToFill" id="MXl-GS-vGa">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSl-w9-kva">
+                                <rect key="frame" x="172" y="148" width="256" height="256"/>
+                                <state key="normal" image="cogwheel (1)"/>
+                                <connections>
+                                    <action selector="performSegue:" destination="NGD-SX-CzT" eventType="touchUpInside" id="zc5-lh-jD9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FSl-w9-kva" firstAttribute="centerX" secondItem="MXl-GS-vGa" secondAttribute="centerX" id="0Eo-ZZ-NOD"/>
+                            <constraint firstItem="FSl-w9-kva" firstAttribute="centerY" secondItem="MXl-GS-vGa" secondAttribute="centerY" id="LS3-Nh-wuU"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Item 2" id="OHX-dH-x4Q"/>
+                    <connections>
+                        <segue destination="P9Y-YL-ZGM" kind="custom" identifier="customSegue" customClass="CustomSegue" customModule="ToolBelt_4_0" customModuleProvider="target" id="ijo-Ef-zPM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q1b-QD-PBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="907" y="1094"/>
+            <point key="canvasLocation" x="671" y="991"/>
+        </scene>
+        <!--Table Map View Controller-->
+        <scene sceneID="bRJ-Zg-oYn">
+            <objects>
+                <viewController id="P9Y-YL-ZGM" customClass="TableMapViewController" customModule="ToolBelt_4_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="weG-CL-bSz"/>
+                        <viewControllerLayoutGuide type="bottom" id="jCi-ae-OKO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vaq-rJ-gRH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BTz-ma-0Dg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <outlet property="delegate" destination="P9Y-YL-ZGM" id="VmX-bo-J3N"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="jCi-ae-OKO" firstAttribute="top" secondItem="BTz-ma-0Dg" secondAttribute="bottom" id="0Cv-Px-kyK"/>
+                            <constraint firstItem="BTz-ma-0Dg" firstAttribute="top" secondItem="vaq-rJ-gRH" secondAttribute="top" id="HkL-kb-eaV"/>
+                            <constraint firstItem="BTz-ma-0Dg" firstAttribute="leading" secondItem="vaq-rJ-gRH" secondAttribute="leading" id="eZV-6P-ZiK"/>
+                            <constraint firstAttribute="trailing" secondItem="BTz-ma-0Dg" secondAttribute="trailing" id="lfe-il-Aif"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="BTz-ma-0Dg" id="woQ-X4-S6B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i1r-TT-uHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="1796"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="2a0-2o-sim">
@@ -169,5 +219,6 @@
         <image name="Item 2" width="21" height="21"/>
         <image name="Item 3" width="21" height="21"/>
         <image name="Steel-1" width="1024" height="1024"/>
+        <image name="cogwheel (1)" width="256" height="256"/>
     </resources>
 </document>
