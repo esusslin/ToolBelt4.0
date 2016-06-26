@@ -11,5 +11,6 @@ target 'ToolBelt_4.0' do
     pod 'Firebase/Auth'
     pod 'JSQMessagesViewController'
     pod 'Backendless'
+    pod 'HTPressableButton'
 
 end

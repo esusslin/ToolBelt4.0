@@ -1,17 +1,16 @@
 //
-//  TableMapController.swift
-//  ToolBelt_4.0
+//  MapSearchViewController.swift
+//  Pods
 //
-//  Created by Emmet Susslin on 6/22/16.
-//  Copyright © 2016 Emmet Susslin. All rights reserved.
-
+//  Created by Emmet Susslin on 6/24/16.
+//
+//
 import UIKit
 import MapKit
 
-class TableMapViewController : UIViewController {
-    let locationManager = CLLocationManager()
+class MapViewController: SearchViewController, MKMapViewDelegate {
     
-    @IBOutlet weak var mapView: MKMapView!
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +18,13 @@ class TableMapViewController : UIViewController {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
-    }
-    
-    
+        
+
+}
 }
 
-extension TableMapViewController : CLLocationManagerDelegate {
-    
+
+extension MapViewController : CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == .AuthorizedWhenInUse {
             locationManager.requestLocation()
@@ -34,9 +33,7 @@ extension TableMapViewController : CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
-            let span = MKCoordinateSpanMake(0.05, 0.05)
-            let region = MKCoordinateRegion(center: location.coordinate, span: span)
-            mapView.setRegion(region, animated: true)
+            print("location:: \(location)")
         }
     }
     
@@ -44,6 +41,3 @@ extension TableMapViewController : CLLocationManagerDelegate {
         print("error:: \(error)")
     }
 }
-
-
-

@@ -21,4 +21,5 @@ class SearchViewController: UIViewController {
     @IBAction func performSegue(sender: AnyObject) {
         self.performSegueWithIdentifier("customSegue", sender: self)
     }
+  
 }
