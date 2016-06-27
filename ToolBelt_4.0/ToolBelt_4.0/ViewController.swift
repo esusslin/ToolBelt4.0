@@ -19,17 +19,26 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         return button
     }()
     
-    
+    let defaultSession = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
+
+//    lazy var downloadsSession: NSURLSession = {
+//        let configuration = NSURLSessionConfiguration.backgroundSessionConfigurationWithIdentifier("bgSessionConfiguration")
+//        let session = NSURLSession(configuration: configuration, delegate: self, delegateQueue: nil)
+//        return session
+//    }()
     
         let email = ""
         let first_name = ""
         let last_name = ""
         let image = ""
+        let user_id = ""
     
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
 //        
-//        
+//        tableView.tableFooterView = UIView()
+//        _ = self.downloadsSession
+//
 //        self.view.addSubview(loginButton)
 //        loginButton.center = self.view.center
 //        loginButton.delegate = self
@@ -40,7 +49,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
 //        }
 //        
 //    }
-    
+//    
     override func viewDidAppear(animated: Bool) {
         
         super.viewWillAppear(true)
@@ -74,6 +83,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
                     print("hello!")
                     print(JSON)
                     let user_id = (JSON["user_id"] as! Int)
+                    print(user_id)
                     let defaults = NSUserDefaults.standardUserDefaults()
                     defaults.setObject(user_id, forKey: "toolBeltUserID")
                     defaults.synchronize()
