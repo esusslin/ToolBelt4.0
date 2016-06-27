@@ -11,6 +11,8 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import Alamofire
 
+//var user_id: String = ""
+
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     let loginButton: FBSDKLoginButton = {
@@ -19,7 +21,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         return button
     }()
     
-    let defaultSession = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
+//    let defaultSession = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
 
 //    lazy var downloadsSession: NSURLSession = {
 //        let configuration = NSURLSessionConfiguration.backgroundSessionConfigurationWithIdentifier("bgSessionConfiguration")
@@ -31,7 +33,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         let first_name = ""
         let last_name = ""
         let image = ""
-        let user_id = ""
+  
     
 //    override func viewDidLoad() {
 //        super.viewDidLoad()

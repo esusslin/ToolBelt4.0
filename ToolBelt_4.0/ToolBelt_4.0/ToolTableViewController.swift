@@ -29,7 +29,7 @@ class ToolTableViewController: UITableViewController, CLLocationManagerDelegate 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(user_id)
         
         self.locationManager.delegate = self
         self.locationManager.requestAlwaysAuthorization()
@@ -46,6 +46,8 @@ class ToolTableViewController: UITableViewController, CLLocationManagerDelegate 
     
     func searchBarSearchButtonClicked(searchbar: UISearchBar)
     {
+        
+        print(user_id)
         searchbar.resignFirstResponder()
         tools = []
         
@@ -54,7 +56,7 @@ class ToolTableViewController: UITableViewController, CLLocationManagerDelegate 
         
         let searchTerm = String(toolListSearchBar.text!)
         print(searchTerm)
-//         print(user_id)
+        print(user_id)
         
 //        
 //        Alamofire.request(.GET, "http://afternoon-bayou-17340.herokuapp.com/tools/search", parameters: ["keyword": searchTerm, "latitude": currentLat, "longitude": currentLong]) .responseJSON {response in
