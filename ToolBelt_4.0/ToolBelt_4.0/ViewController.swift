@@ -11,7 +11,7 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import Alamofire
 
-//var user_id: String = ""
+var user_id: String = ""
 
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
@@ -21,14 +21,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         return button
     }()
     
-//    let defaultSession = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
 
-//    lazy var downloadsSession: NSURLSession = {
-//        let configuration = NSURLSessionConfiguration.backgroundSessionConfigurationWithIdentifier("bgSessionConfiguration")
-//        let session = NSURLSession(configuration: configuration, delegate: self, delegateQueue: nil)
-//        return session
-//    }()
-    
         let email = ""
         let first_name = ""
         let last_name = ""
@@ -82,10 +75,10 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             
             Alamofire.request(.POST, "http://localhost:3000/users", parameters: ["email": email, "first_name": first_name, "last_name": last_name, "image": image]).responseJSON { response in
                 if let JSON = response.result.value {
-                    print("hello!")
+                    
                     print(JSON)
                     let user_id = (JSON["user_id"] as! Int)
-                    print(user_id)
+//                    print(user_id)
                     let defaults = NSUserDefaults.standardUserDefaults()
                     defaults.setObject(user_id, forKey: "toolBeltUserID")
                     defaults.synchronize()
@@ -98,12 +91,19 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
        print("login complete")
+        print(user_id)
         fetchProfile()
         self.performSegueWithIdentifier("oauthtotabs", sender: self)
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
 //        print("user logged out..")
+    }
+    
+    func loadDefaults() {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        print(defaults.objectForKey("toolBeltUserID") as! Int)
+        
     }
     
     override func didReceiveMemoryWarning() {
