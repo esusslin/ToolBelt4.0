@@ -32,8 +32,6 @@ class ToolTableViewController: UITableViewController, CLLocationManagerDelegate 
         currentLat = location.coordinate.latitude
         currentLong = location.coordinate.longitude
     }
-   
-
 
     
     override func viewDidLoad() {
@@ -41,8 +39,6 @@ class ToolTableViewController: UITableViewController, CLLocationManagerDelegate 
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        
-        
 
         self.tableView.registerClass(ToolTableViewCell.self, forCellReuseIdentifier: "ToolTableViewCell")
         self.locationManager.delegate = self
@@ -59,8 +55,7 @@ class ToolTableViewController: UITableViewController, CLLocationManagerDelegate 
         else{
             print("Location service disabled");
         }
-//        self.tableView.reloadData()
-        // Load the sample data.
+
     }
     
     
@@ -74,7 +69,6 @@ class ToolTableViewController: UITableViewController, CLLocationManagerDelegate 
         
         let searchTerm = String(toolListSearchBar.text!)
         print(searchTerm)
-       
         
         
         Alamofire.request(.GET, "http://localhost:3000/tools/search", parameters: ["keyword": searchTerm, "latitude": currentLat, "longitude": currentLong,
@@ -98,16 +92,17 @@ class ToolTableViewController: UITableViewController, CLLocationManagerDelegate 
                     }
                 
                     let myTool = Tool(title: title!, description: description, ownerId: ownerId!, distance: distanceToTool)
-//                    print(myTool)
-//                    print(myTool.title)
-//                    print(myTool.distance)
-//                    print(myTool.ownerId)
+
 
                     self.tools.append(myTool)
                
                 }
                 
-                self.tableView.reloadData()
+                dispatch_async(dispatch_get_main_queue(), {
+                    
+                    self.tableView.reloadData()
+                    
+                })
                 
             } else {
                 print("Sent search term, but no response")
@@ -121,35 +116,34 @@ class ToolTableViewController: UITableViewController, CLLocationManagerDelegate 
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        print("****************")
-//        print(tools.count)
-//        print("****************")
+        print(tools.count)
         return tools.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        
         let cellIdentifier = "ToolTableViewCell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ToolTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as!ToolTableViewCell
         let tool = tools[indexPath.row]
 
-        cell.toolListTitle?.text = tool.title
+        cell.title?.text = tool.title
 //       print(tool.title)
-        cell.toolListDescription?.text = tool.description
+//        cell.toolListDescription?.text = tool.description
         cell.ownerId = tool.ownerId
 //        print(tool.ownerId)
 //       print(tool.distance)
-        cell.distance?.text = "\(tool.distance)mi"
+//        cell.distance?.text = "\(tool.distance)mi"
         
         print(cell)
         return cell
-        print(cell)
     }
     
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-//    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 //        if  segue.identifier == "contactOwnerSegue",
 //            let destination = segue.destinationViewController as? ChatController,
