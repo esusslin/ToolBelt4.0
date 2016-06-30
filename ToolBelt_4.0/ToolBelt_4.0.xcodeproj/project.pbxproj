@@ -20,6 +20,9 @@
 		E26219B11D24821E0031BD20 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26219B01D24821E0031BD20 /* CustomSegue.swift */; };
 		E2678B4A1D1B3712003387F0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2678B491D1B3712003387F0 /* SearchViewController.swift */; };
 		E284420D1D1B764100E219F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E284420C1D1B764100E219F6 /* Main.storyboard */; };
+		E293C4F01D24BFF4003968AB /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E293C4EF1D24BFF4003968AB /* ChatController.swift */; };
+		E293C4F21D24C36F003968AB /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E293C4F11D24C36E003968AB /* DetailsViewController.swift */; };
+		E293C4F41D24C7FC003968AB /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E293C4F31D24C7FC003968AB /* UserLocation.swift */; };
 		E29539451D1A3525004F5855 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29539441D1A3525004F5855 /* CustomTabBar.swift */; };
 		E29539471D1A3562004F5855 /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29539461D1A3562004F5855 /* CustomTabBarItem.swift */; };
 		E295394B1D1A3814004F5855 /* CustomTabAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = E295394A1D1A3814004F5855 /* CustomTabAnimatedTransitioning.swift */; };
@@ -50,6 +53,9 @@
 		E26219B01D24821E0031BD20 /* CustomSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
 		E2678B491D1B3712003387F0 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E284420C1D1B764100E219F6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E293C4EF1D24BFF4003968AB /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		E293C4F11D24C36E003968AB /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E293C4F31D24C7FC003968AB /* UserLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
 		E29539441D1A3525004F5855 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		E29539461D1A3562004F5855 /* CustomTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
 		E295394A1D1A3814004F5855 /* CustomTabAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabAnimatedTransitioning.swift; sourceTree = "<group>"; };
@@ -129,7 +135,10 @@
 				E251624D1D178A0700499911 /* Assets.xcassets */,
 				E251624F1D178A0700499911 /* LaunchScreen.storyboard */,
 				E284420C1D1B764100E219F6 /* Main.storyboard */,
+				E293C4F31D24C7FC003968AB /* UserLocation.swift */,
+				E293C4F11D24C36E003968AB /* DetailsViewController.swift */,
 				E2E3FA9E1D209D0C001B4250 /* Tool.swift */,
+				E293C4EF1D24BFF4003968AB /* ChatController.swift */,
 				E26219B01D24821E0031BD20 /* CustomSegue.swift */,
 				E2BCF8381D1DBD30005450A3 /* ListViewController.swift */,
 				E2F9BE0A1D234A9400C648CE /* ToolTableViewCell.swift */,
@@ -271,14 +280,17 @@
 				E29905F21D224263007E3D4F /* MyAnnotation.swift in Sources */,
 				E2678B4A1D1B3712003387F0 /* SearchViewController.swift in Sources */,
 				E26219B11D24821E0031BD20 /* CustomSegue.swift in Sources */,
+				E293C4F41D24C7FC003968AB /* UserLocation.swift in Sources */,
 				E2E3FA9F1D209D0C001B4250 /* Tool.swift in Sources */,
 				E29539451D1A3525004F5855 /* CustomTabBar.swift in Sources */,
 				E2506DE41D1A32860094BB91 /* CustomTabBarViewController.swift in Sources */,
 				E25162491D178A0700499911 /* ViewController.swift in Sources */,
+				E293C4F01D24BFF4003968AB /* ChatController.swift in Sources */,
 				E25162471D178A0700499911 /* AppDelegate.swift in Sources */,
 				E2BCF8391D1DBD30005450A3 /* ListViewController.swift in Sources */,
 				E2BCF8371D1DB77B005450A3 /* MapViewController.swift in Sources */,
 				E295394B1D1A3814004F5855 /* CustomTabAnimatedTransitioning.swift in Sources */,
+				E293C4F21D24C36F003968AB /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

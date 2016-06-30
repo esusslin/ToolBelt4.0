@@ -34,7 +34,7 @@ class ListViewController: UIViewController, UISearchBarDelegate, CLLocationManag
         
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 116
-        self.tableView.registerClass(ToolTableViewCell.self, forCellReuseIdentifier: "ToolTableViewCell")
+//        self.tableView.registerClass(ToolTableViewCell.self, forCellReuseIdentifier: "ToolTableViewCell")
         
         self.locationManager.delegate = self
         self.locationManager.requestAlwaysAuthorization()
@@ -118,6 +118,7 @@ class ListViewController: UIViewController, UISearchBarDelegate, CLLocationManag
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        print("hello")
         return 1
     }
     
@@ -133,42 +134,43 @@ class ListViewController: UIViewController, UISearchBarDelegate, CLLocationManag
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as!ToolTableViewCell
         let tool = tools[indexPath.row]
         
-        if(indexPath.row==0){
-        cell.title?.text = tool.title
+       
+        cell.title.text = tool.title
         //       print(tool.title)
         //        cell.toolListDescription?.text = tool.description
         cell.ownerId = tool.ownerId
         //        print(tool.ownerId)
         //       print(tool.distance)
         //        cell.distance?.text = "\(tool.distance)mi"
-        }
+        
         
         print(cell)
         return cell
     }
     
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
-    //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    //        if  segue.identifier == "contactOwnerSegue",
-    //            let destination = segue.destinationViewController as? ChatController,
-    //            toolIndex = tableView.indexPathForSelectedRow?.row
-    //        {
-    //            destination.contact = tools[toolIndex].ownerId
-    //        }
-    //    }
-    //
-    //    func tapRowAtIndex(index:Int) {
-    //        let rowToSelect:NSIndexPath = NSIndexPath(forRow: index, inSection: 0)
-    //        self.tableView.selectRowAtIndexPath(rowToSelect, animated: true, scrollPosition: UITableViewScrollPosition.None)
-    //        self.tableView(self.tableView, didSelectRowAtIndexPath: rowToSelect)
-    //
-    //
-    //    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    //        performSegueWithIdentifier("contactOwnerSegue", sender: ToolTableViewCell.self)
-    //    }
+        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+            if  segue.identifier == "contactOwnerSegue",
+                let destination = segue.destinationViewController as? ChatController,
+                toolIndex = tableView.indexPathForSelectedRow?.row
+            {
+                destination.contact = tools[toolIndex].ownerId
+            }
+        }
+    
+        func tapRowAtIndex(index:Int) {
+            let rowToSelect:NSIndexPath = NSIndexPath(forRow: index, inSection: 0)
+            self.tableView.selectRowAtIndexPath(rowToSelect, animated: true, scrollPosition: UITableViewScrollPosition.None)
+//            self.tableView(self.tableView, didSelectRowAtIndexPath: rowToSelect)
+    
+    
+//        override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//            performSegueWithIdentifier("contactOwnerSegue", sender: ToolTableViewCell.self)
+//        }
 
+    }
 }
